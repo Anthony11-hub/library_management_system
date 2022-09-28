@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/vendors/css/fluid.css">
     <link rel="stylesheet" href="/resources/css/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header id="">
@@ -26,16 +27,19 @@
         <div class="row">
             <div id="wrap">
                 <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit_search" data-search>
+                    <input id="search" name="search" type="text" placeholder="What're we looking for ?" data-search><input id="search_submit" value="Rechercher" type="submit_search">
                 </form>
             </div>
+            <!-- <div class="search-wrapper">
+                <label for="search">Search Users</label>
+                <input type="search" id="search" data-search>
+            </div> -->
             <div class="user-cards" data-user-cards-container>
-
             </div>
             <template data-user-template>
                 <div class="card">
-                    <div class="header"></div>
-                    <div class="body"></div>
+                    <div class="header" data-header></div>
+                    <div class="body" data-body></div>
                 </div>
             </template>
         </div>
