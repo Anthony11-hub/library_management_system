@@ -7,34 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="/vendors/css/fluid.css">
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header id="">
-        <div class="header-box">
-            <div class="header-text-box">
-				<h1 class="">LibraryForU</h1>
-				<h2>A library management system for chuka uni students</h2>
-			</div>
-            <a href="#" class="btn btn-full">Admin</a>
-            <a href="#" class="btn btn-full">Student</a>
-            <h4>See our book collections</h4>
-            <i class="icon fa-solid fa-chevrons-down"></i>
+    <header id="" class="header">
+        <div class="header__logo-box">
+            <img src="resources/img/library-logo.png" alt="header logo" class="header__logo">
         </div>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">LibraryForU</span>
+                <span class="heading-primary--sub">A library management system for chuka uni students</span>
+            </h1>
+            
+            <!-- <h1 class="">LibraryForU</h1>
+            <h2>A library management system for chuka uni students</h2> -->
+        </div>
+        <a href="#" class="btn btn-full">Admin</a>
+        <a href="#" class="btn btn-full">Student</a>
+        <h4>See our book collections</h4>
     </header>
-    <section class="books-section">
+    <!-- <section class="books-section">
         <div class="row">
             <div id="wrap">
                 <form action="" autocomplete="on">
                     <input id="search" name="search" type="text" placeholder="What're we looking for ?" data-search><input id="search_submit" value="Rechercher" type="submit_search">
                 </form>
-            </div>
+            </div> -->
             <!-- <div class="search-wrapper">
                 <label for="search">Search Users</label>
                 <input type="search" id="search" data-search>
             </div> -->
-            <div class="user-cards" data-user-cards-container>
+            <!-- <div class="user-cards" data-user-cards-container>
             </div>
             <hr>
             <template data-user-template>
@@ -46,6 +51,6 @@
                 </div>
             </template>
         </div>
-    </section>
+    </section> -->
 </body>
 </html>

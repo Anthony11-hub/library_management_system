@@ -1,30 +1,4 @@
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-html, body{/*  This is all global*/
-	text-rendering: optimizeLegibility;/* Makes sure that your font gets rendered properly on the pages */
-	background-color: #fff;
-	color: #000;
-	font-size: 16px;
-	font-family: 'Work Sans', 'Arial', Sans-serif;
-	font-weight: 300;
-}
-/*-----------------CLEARFIX------------*/
-.clearfix{
-	zoom:1;
-}
-.clearfix:after{
-	content: "";
-	display: table;
-	clear: both;
-	visibility: hidden;
-}
-.row{
-	max-width: 1140px;
-	margin: 0 auto;/*  top and bottom margin 0 and left and right margin auto*/
-}
+
 
 
 /* ---------------BUTTONS--------------- */
@@ -60,46 +34,6 @@ input[type=submit]:hover{
 .btn-ghost:active{
 	background-color: #ed07b7;
 	color: #fff;
-}
-
-/*-----------------HEADER------------------*/
-header{
-	background-image:-webkit-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7)), url(img/14.jpg);
-	background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7)), url(img/14.jpg);/* the gradient darkens the background image */
-	height: 100vh;/* changes according to screen size */
-	background-size: cover;
-	background-position: center;
-	position: relative;/* Parent positioning */
-}
-.header-box{
-	position: absolute;/* child positioning */
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%,-50%);
-	        transform: translate(-50%,-50%);/* positions the header-x horizontally and vertically */
-	text-align: center;
-}
-
-h1{
-	font-size: 500%;/* Easier to convert from device to device */
-	color: #fff;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-h2{
-	font-size: 200%;/* Easier to convert from device to device */
-	color: #fff;
-	font-weight: 400;
-}
-h4{
-    /* margin-bottom: 20px; */
-    padding-top: 40px;
-    color: #fff;
-    font-size: 100%;
-}
-.header-text-box{
-	margin-bottom: 100px;
 }
 
 /* =--------------------icon-------------------- */

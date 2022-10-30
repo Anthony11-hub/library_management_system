@@ -1,0 +1,64 @@
+/*-----------------HEADER------------------*/
+.header{
+	position: relative;
+    background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7)), url(img/14.jpg);/* the gradient darkens the background image */
+	height: 100vh;
+	top: 0;
+	left: 0;
+	// transform: translate(-50%,-50%);
+	text-align: center;
+    background-size: cover;
+	background-position: center;
+
+    &__logo-box{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__logo{
+        height: 10rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+}
+
+header{
+	// background-image:-webkit-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7)), url(img/14.jpg);
+
+    h2 {
+        font-size: 3rem;/* Easier to convert from device to device */
+        color: #fff;
+        font-weight: 400;
+    }
+
+    h4{
+        /* margin-bottom: 20px; */
+        padding-top: 40px;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+}
+
+h1 {
+    font-size: 6rem;/* Easier to convert from device to device */
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+
+.header-text-box{
+	margin-bottom: 100px;
+}

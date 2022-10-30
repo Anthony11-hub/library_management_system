@@ -1,0 +1,100 @@
+/*-----------------HEADER------------------*/
+.header {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.7))), url(img/14.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(img/14.jpg);
+  /* the gradient darkens the background image */
+  height: 100vh;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__logo {
+  height: 10rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+header h2 {
+  font-size: 3rem;
+  /* Easier to convert from device to device */
+  color: #fff;
+  font-weight: 400;
+}
+
+header h4 {
+  /* margin-bottom: 20px; */
+  padding-top: 40px;
+  color: #fff;
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 6rem;
+  /* Easier to convert from device to device */
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.header-text-box {
+  margin-bottom: 100px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  /*  This is all global*/
+  text-rendering: optimizeLegibility;
+  /* Makes sure that your font gets rendered properly on the pages */
+  background-color: #fff;
+  color: #000;
+  font-size: 62.25%;
+  font-family: 'Work Sans', 'Arial', Sans-serif;
+  font-weight: 3rem;
+  line-height: 1.4;
+}
+
+/*-----------------CLEARFIX------------*/
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+  /*  top and bottom margin 0 and left and right margin auto*/
+}
+/*# sourceMappingURL=main.css.map */

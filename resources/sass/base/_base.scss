@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body{/*  This is all global*/
+	text-rendering: optimizeLegibility;/* Makes sure that your font gets rendered properly on the pages */
+	background-color: #fff;
+	color: #000;
+	font-size: 62.25%;
+	font-family: 'Work Sans', 'Arial', Sans-serif;
+	font-weight: 3rem;
+    line-height: 1.4;
+}
+/*-----------------CLEARFIX------------*/
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+	visibility: hidden;
+}
+.row{
+	max-width: 1140px;
+	margin: 0 auto;/*  top and bottom margin 0 and left and right margin auto*/
+}
