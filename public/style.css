@@ -1,0 +1,73 @@
+/* variables 
+    #175D22*/
+
+    body {
+        padding: 0;
+        background-color: #09150A;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+    }
+    
+    .login-box {
+        position: absolute;
+        width: 400px;
+        padding: 40px;
+        top: 40%;
+        left: 50%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+    
+    
+    }
+    
+    .login-box .user-box input {
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: black;
+        width: 100%;
+        padding: 10px 0;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .login-box .user-box label {
+        top: 0;
+        left: 0;
+        transition: .5s;
+        padding: 10px 0;
+        font-size: 16px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .link {
+        text-decoration: none;
+        color:#555;
+        top: 10px;
+    }
+    
+    /* -------------buttons---------------- */
+    .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        width: 300px;
+        color: #fff;
+        background-color: #175a21;
+    }
+    
+    .btn:hover,
+    .btn:active {
+        background-color: #28973a;
+    }
+    
+    .btn:active {
+        box-shadow: none;
+    }
