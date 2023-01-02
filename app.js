@@ -11,8 +11,8 @@ const app = express();
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
-    email: process.env.DATABASE_EMAIL,
     database: process.env.DATABASE
 });
 
@@ -21,7 +21,7 @@ const publicDirectory = path.join(__dirname, 'public');
 app.use(express.static(publicDirectory));
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.json);
+app.use(express.json());
 
 app.set('view engine', 'hbs');
 
@@ -34,11 +34,11 @@ db.connect(( error ) => {
 });
 
 app.use('/', require('./routes/pages'));
-app.use('/login', require('./routes/auth'));
+app.use('/auth', require('./routes/auth'));
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello World!');
+// });
 
 app.listen(5002, () => {
     console.log("server started on 5002");
